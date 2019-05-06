@@ -92,6 +92,16 @@ hr{
 	margin: 0 auto 0 auto;
 }
 
+h1 {
+
+}
+
+h2{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	color: #fff;
+	text-align: center;
+}
+
 footer {
 	font-size: 0.9em;
 	text-align: center;
@@ -153,4 +163,101 @@ div.button a {
 	font-size: 16px;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	border-radius: 15px;
+	border: none;
 }
+
+/*Style for main
+==================================================*/
+form{
+	width: 280px;
+	position: absolute;
+	top: 50%; /*this might need to change for different screens*/
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.textbox{
+	width: 100%;
+	overflow: hidden;
+	font-size: 20px;
+	padding: 8px 0;
+	color: #fff;
+	margin: 8px 0;
+	border-bottom: 1px solid #fff;
+}
+
+.formheader{
+	width: 100%;
+	overflow: hidden;
+}
+
+.formheader h2{
+	font-size: 32px;
+	border-bottom: 6px solid #f50;
+}
+
+.textbox i{
+	width: 26px;
+	float: left;
+	text-align: center
+}
+
+.textbox input{
+	border: none;
+	outline: none;
+	background: none;
+	color: #fff;
+	font-size: 18px;
+	width: 80%;
+	float: left;
+	margin: 0 10px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+	color:#bbb;
+}
+
+.textbox select{
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 18px;
+	width: 80%;
+	color: #fff;
+	float: left;
+	margin: 0 10px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.textbox select option{
+	margin: 40px;
+	background: transparent;
+	color: #000;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+	border: none;
+}
+
+.radiodiv{
+	width: 100%;
+	overflow: hidden;
+	font-size: 20px;
+	padding: 8px 0;
+	color: #fff;
+	margin: 8px 0;
+	border-bottom: 1px solid #fff;
+}
+
+.subbnt{
+	border: none;
+	background: #f50;
+	color: #fff;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+  display: inline-block;
+	font-size: 18px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	border-radius: 15px;
+	cursor: pointer;
+}
+

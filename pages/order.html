@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Atticus</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <div class="nav_div">
+    <nav>
+      <a href="../index.html">HOME</a> &nbsp | &nbsp
+      <a href="menu.html">MENU</a> &nbsp | &nbsp
+      <a href="gift_shop.html">GIFT SHOP</a> &nbsp | &nbsp
+      <a href="photo_gallery.html">PHOTO GALLERY</a> &nbsp | &nbsp
+      <a href="contact_us.html">CONTACT US</a>
+    </nav>
+  </div>
+  <div id="container">
+    <main>
+      <div>
+        <a href="index.html"><img src="../images/logo_text.png" alt="Atticus Logo" class="img_center" /></a><br/>
+      </div>
+      <form action="receipt.php" method="POST">
+        <input name="name" type="text" placeholder="Name"><br/>
+        <input name="email" type="email" placeholder="Email"><br/>
+        <input name="phone" type="tel" placeholder="Phone"><br/>
+        <select name="order">
+          <option value="coffee1">Coffee1</option>
+          <option value="coffee2">Coffee2</option>
+        </select><br/>
+        <input name="size" type="radio" value="s">S<br/>
+        <input name="size" type="radio" value="m">M<br/>
+        <input name="size" type="radio" value="l">L<br/>
+      </form>
+    </main>
+  </div>
+</body>
+
+</html>
