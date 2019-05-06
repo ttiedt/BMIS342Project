@@ -23,6 +23,9 @@
         <a href="../index.html"><img src="../images/logo_text.png" alt="Atticus Logo" class="img_center" /></a><br/>
       </div>
       <?php
+        include('database.php');
+        $product = $_SESSION['product'];
+
         echo "<form action='receipt.php' method='POST'>
           <div class='formheader'>
             <h2>Online Order</h2>
@@ -41,18 +44,34 @@
           </div>
           <div class='textbox'>
             <i class='fas fa-mug-hot'></i>
-            <select name='order'>
-              <option value='coffee1'>Coffee1</option>
-              <option value='coffee2'>Coffee2</option>
-            </select>
+            <select name='order'>";
+        foreach($product as $i => $v){
+          echo "<option value='$i'>{$v['name']}</option>";
+        }
+        echo"</select>
           </div>
           <div class='radiodiv'>
-            <input name='size' type='radio' value='s'><lable>S</lable><br/>
-            <input name='size' type='radio' value='m'>M<br/>
-            <input name='size' type='radio' value='l'>L<br/>
+            <input name='size' type='radio' value='s'>Small<br/>
+            <input name='size' type='radio' value='m'>Medium<br/>
+            <input name='size' type='radio' value='l'>Large<br/>
+            <input name='size' type='radio' value='xl'>Extra Large<br/>
           </div>
-          <input type='submit' value='Submit' class='subbnt'>
-          <input type='reset' value='Cancel' class='subbnt'>
+          <div class='textbox'>
+            <i class='fas fa-credit-card'></i>
+            <input type='text' placeholder='Card Number'>
+            * 
+        // Here we populate data for the year drop down
+        echo "</select>/<select>";
+        for($i = 2019; $i <= 2029; $i++){
+          echo "<option value='$i'>$i</option>";
+        }
+        // Close the remaining open tags
+        echo "</select>
+          </div>
+          <div class='center'>
+            <input type='submit' value='Submit' class='subbnt'>
+            <input type='reset' value='Cancel' class='subbnt'>
+          </div>
         </form>";
       ?>
     </main>
